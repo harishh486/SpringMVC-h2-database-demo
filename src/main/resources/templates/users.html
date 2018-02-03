@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Framework </title>
+</head>
+<body>
+<h1>User List</h1>
+
+<table>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>username</th>
+        <th>password</th>
+        <th>age</th>
+        <th>gender</th>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.firstName}">harish</td>
+        <td th:text="${user.lastName}">mandhadi</td>
+        <td th:text="${user.username}">harishh486</td>
+        <td th:text="${user.password}">dummy1</td>
+        <td th:text="${user.age}">23</td>
+        <td th:text="${user.gender}">male</td>
+    </tr>
+</table>
+
+</body>
+</html>

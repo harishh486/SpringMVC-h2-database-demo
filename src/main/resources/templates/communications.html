@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Framework </title>
+</head>
+<body>
+<h1>Communication List</h1>
+
+<table>
+    <tr>
+        <th>email</th>
+        <th>phone</th>
+    </tr>
+    <tr th:each="communication : ${communications}">
+        <td th:text="${communication.email}">harishh486@gmail.com</td>
+        <td th:text="${communication.phone}">9581514132</td>
+    </tr>
+</table>
+
+</body>
+</html>
